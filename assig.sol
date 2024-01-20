@@ -14,12 +14,12 @@ contract ArithmeticContract {
         require(number > 0, "Number must be greater than 0");
 
         // Find the position of the most significant bit
-        uint256 msbPosition = 0;
+        uint256 mostSigBit = 0;
         while (number > 0) {
             number = number >> 1;
-            msbPosition++;
+            mostSigBit++;
         }
 
-        return msbPosition;
+        return mostSigBit;
     }
 }
